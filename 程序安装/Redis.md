@@ -61,6 +61,16 @@ Response received : -DENIED Redis is running in protected mode because protected
 
 ![01](./images/01.png)
 
+绑定127.0.0.1，可以在安装了Redis服务的本地主机连接Redis服务。
+
+192.168.0.140时通过执行ifconfig得到的，用于在Window的远程连接Redis服务。
+
+注意：这里应该bind的是redis所在服务器网卡的ip。也就是说，如果你的redis服务器有两张网卡，一张是ip-1,另一张是ip-2，如果你bind ip-1.那么只有请求ip-1的请求会被受理。127.0.0.1好比时卧室的门，192.168.0.240时家的大门，家可能还有后门...，打开卧室的门允许家人内部流动，打开大门、后面可以允许外面的人进入家里
+
+![35](./images/35.png)
+
+![36](./images/36.png)
+
 - 给Reids服务设置密码，通过ip地址和密码登录↓
 
 ![02](./images/02.png)
