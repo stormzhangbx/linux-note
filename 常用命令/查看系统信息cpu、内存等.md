@@ -17,3 +17,7 @@
 ## 2 内存
 
 - `cat /proc/meminfo | grep MemTotal` 查看总的内存大小
+
+## 3 电脑和操作系统的相关信息
+
+[uname命令](https://www.jianshu.com/p/e7d8f5a650f1)
